@@ -3,7 +3,7 @@
 try:
     num = int(input("Enter a number less than 25 \n").strip())
 
-    if num >= 25:
+    if num > 25:
         raise ValueError
     
     while num <= 25:
