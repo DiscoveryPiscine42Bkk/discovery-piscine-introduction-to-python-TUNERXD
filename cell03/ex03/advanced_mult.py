@@ -9,10 +9,11 @@ if len(sys.argv) > 1:
 total_table = 10
 total_num = 10
 current_table = 0
-current_num = 0
+
 
 while current_table <= total_table:
 
+    current_num = 0
     print(f"Table de {current_table}: ", end = '')
 
     while current_num <= total_num:
@@ -20,6 +21,5 @@ while current_table <= total_table:
         print(f"{current_table * current_num} ", end = '')
         current_num += 1
 
-    current_num = 0 # reset current_num to 0
     current_table += 1 # increment to next table
     print()
