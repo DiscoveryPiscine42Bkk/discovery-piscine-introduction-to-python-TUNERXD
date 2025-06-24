@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 try:
-    print("Enter a number")
-    num = int(input("").strip())
+    num = int(input("Enter a number \n").strip())
 
     for i in range(10):
         result =  num * i

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 try:
-    print("Enter a number less than 25")
-    num = int(input("").strip())
-
+    num = int(input("Enter a number less than 25 \n").strip())
 
     if num >= 25:
         raise ValueError
