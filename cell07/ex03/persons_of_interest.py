@@ -9,20 +9,15 @@ def main():
     "grace": { "name": "Grace Hopper", "date_of_birth": "1906" }
     }
 
-    print(f"Average for class 3B: {average(class_3B)}.")
-    print(f"Average for class 3C: {average(class_3C)}.")
+    famous_births(women_scientists)
 
+def famous_births(dict):
 
-def average(dict):
+    sorted_dict = sorted(dict.items(), key=lambda item: item[1]["date_of_birth"])
 
-    
-    total = 0
-    for key in dict:
-        total += dict[key]
+    for key,value in sorted_dict:
+        print(f"{value["name"]} is a great scientist born in {value["date_of_birth"]}.")
 
-    avg = total / len(dict)
-    return avg
-    
 
 if __name__ == "__main__":
     main()
