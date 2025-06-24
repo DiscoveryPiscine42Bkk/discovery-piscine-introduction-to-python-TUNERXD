@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 try:
-    number = int(input("")).strip()
+    number = int(input("").strip())
 
     if number > 0:
         print("This number is positive.")
