@@ -6,7 +6,7 @@ def main():
 
     if len(sys.argv) > 1:
         print("none")
-        return
+        sys.exit(1)
 
 
     total_table = 10
